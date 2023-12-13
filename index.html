@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Zeichenkettentrennungsmaschine</title>
+</head>
+
+<body>
+    <main>
+        <div class="glowHeadline">
+            <h1 class="neon">Zeichenketten-Trennungs-</h1>
+            <h1 class="machine">Maschine</h1>
+        </div>
+        <form action="" onsubmit="return false">
+
+            <section class="glowBorder">
+                <article>
+                    <p>Zu trennende Zeichenkette</p>
+                    <input type="text" name="txtInput" required oninvalid="this.setCustomValidity('cannot be empty.')"
+                        onchange="this.setCustomValidity('')">
+                    <p>Zeichenkette für die Trennungsoption</p>
+                    <input type="text" name="zeichenInput" required
+                        oninvalid="this.setCustomValidity('cannot be empty')" onchange="this.setCustomValidity('')">
+                    <p id="warnhinweis"></p>
+                </article>
+
+                <article class="radio">
+                    <input type="radio" name="trennen" id="" value="davor">
+                    <p>Davor trennen</p>
+                    <input type="radio" name="trennen" id="" value="danach">
+                    <p>Danach trennen</p>
+                </article>
+
+                <div><button class="btn" onclick="schneiden()">CLICK</button></div>
+                <!-- <h4>Ausgabe</h4> -->
+                <article class="flex">
+                    <div class="ausgabe">
+                        <p>Vorderer Teil</p>
+                        <p id="ausgabeVorne"></p>
+                    </div>
+                    <div class="ausgabe">
+                        <p>Hinterer Teil</p>
+                        <p id="ausgabeHinten"></p>
+                    </div>
+                </article>
+            </section>
+
+        </form>
+
+
+    </main>
+
+
+
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

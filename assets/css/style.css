@@ -1,0 +1,145 @@
+@font-face {
+    font-family: neon;
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf");
+}
+@font-face {
+    font-family: neon club;
+    src: url("./font/NEON\ CLUB\ MUSIC_light.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #000;
+}
+
+h4{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    margin-bottom: 3vh;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+p{
+    font-size: 20px;
+    color: #fff;
+}
+
+
+.radio {
+    display: flex;
+    justify-content: center;
+}
+
+.glowBorder {
+    display: flex;
+    flex-direction: column;
+    padding: 5vh;
+}
+
+.flex{
+    display: flex;
+    margin: 2vh auto;
+}
+
+.ausgabe {
+    margin: 2vh 2vw;
+}
+
+#ausgabeVorne, 
+#ausgabeHinten {
+    text-decoration: none;
+    margin: 3vh 0;
+}
+
+.radio>p {
+    padding: 2vh;
+}
+
+input[type=text]{
+    border: none;
+    border-radius:5px;
+    background: rgba(255, 255, 255, 0.18);
+    color: white;
+    height: 4vh;
+    width: 30vw;
+    text-align: center;
+    margin: 1vh 0 5vh 0;
+}
+
+.btn {
+    font-family: neon;
+    font-size: 2rem;
+    width: 20vw;
+    height: 5vh;
+    border-radius: 5px;
+    border: none;
+    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .1vw .1vw .1vw #806914;
+    color: #FED128;
+}
+
+.btn:hover{
+    cursor: pointer;
+    text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .1vw .1vw .1vw #147280;
+    color: #28D7FE;
+
+}
+
+.glowHeadline {
+    width: 50vw;
+    margin-bottom: 2vh;
+}
+
+.neon {
+    font-family: neon;
+    color: #FB4264;
+    font-size: 6vw;
+    line-height: 6vw;
+    text-shadow: 0 0 3vw #F40A35;
+    margin: 10px;
+}
+
+.machine {
+    padding: 20px;
+    font-family: neon club;
+    font-size: 6vw;
+    line-height: 6vw;
+    color: #fff;
+    text-shadow:
+    0 0 21px #fff,
+    0 0 42px #28D7FE,
+    0 0 82px #28D7FE,
+    0 0 92px #1041FF,
+    0 0 102px #1041FF,
+    0 0 151px #1041FF;
+}
+
+.neon {
+    animation: neon 2s ease infinite;
+    -moz-animation: neon 1s ease infinite;
+    -webkit-animation: neon 1s ease infinite; 
+}
+
+@keyframes neon {
+    0%,
+    100% {
+        text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+        color: #FED128;
+    }
+    50% {
+    text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+    color: #806914;
+    }
+}
+
+
